@@ -1,0 +1,102 @@
+
+
+
+
+
+
+@media screen and(min-width: 500px){
+    /* --דף הבית--- */
+    #chars-div{
+       display: flex;
+       flex-wrap: wrap;
+       gap :1rem;
+    }
+    .char #char5 {
+        font-size: 1.2rem;  }
+
+/* -------------- */
+
+
+    .cardContact {
+    width: 45vw;
+ 
+}
+.centercontact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+   
+}
+.cardContact .fromcontact {
+
+     padding: 2rem 5rem; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (max-width:500px){
+    #chars-div{
+        display: flex;
+        flex-direction: column;
+        direction:ltr;
+        padding-top: 2rem;
+        gap: 0.5rem;
+      
+    }
+    .centercontact {
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+       
+  
+    .char #char5{
+        font-size: 0.7rem;
+    }
+    .cardContact {
+        width:0vw ;
+     
+    }
+    .cardContact .fromcontact {
+
+        padding: 0.5rem 2rem; 
+   }
+   .containerhome{
+    display: grid;
+    grid-template-columns: (2,auto);
+    grid-template-rows: (6,auto);
+ 
+    grid-template-areas:
+    'main main'
+    'main main'
+    'main main'
+    'main main'
+    'footer footer'
+    'footer footer'
+    ;
+ 
+   }
+
+
+}
+

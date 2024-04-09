@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>נטפרי | פורום</title>
+    <link rel="stylesheet" href="netfree.css">
+</head>
+
+<body id="forum-body" dir="rtl">
+    <a href="#" id="open-menu">=</a>
+    <header>
+        <div id="header-menu">
+            <div>
+                <span>NET<p>FREE</p></span>
+                <div><a href="www"><img src="hebrow.png" width="40px" title="עברית"></a><a href="www"><img src="english.png" width="40px" title="english"></a></div>
+            </div>
+            <ul>
+                <li><a href="netfree.html">ראשי</a></li>
+                <li><a href="netfree.html#about">אודות</a></li>
+                <li><a href="netfree.html#enter">הצטרפות אלינו</a></li>
+                <li id="border"><a href="netfree.html#forum">פורום</a></li>
+                <li><a href="guide.html">מדריכים</a></li>
+                <li><a href="netfree.html#">אזור אישי</a></li>
+                <li><a href="netfree.html#donate">תרומה</a></li>
+                <li><a href="netfree.html#kesher">צור קשר</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="forum-content">
+        <nav></nav>
+        <section id="forum-inner">
+            <h2 id="forum-h2">פורום | הרשם</h2>
+            <form action="end.html" novalidate id="form">
+                <div>
+                    <label for="email">*כתובת אימייל</label>
+                    <input type="email" name="email" id="email" placeholder="הכנס כתובת אימייל" required><br>
+                    <span class="error">כברירת מחדל, כתובת האימייל שלך אינה חשופה למשתמשים אחרים.</span><br>
+                </div>
+                <div>
+                    <label for="notshow">הצג את כתובת האימייל שלי למשתמשים אחרים</label>
+                    <input type="checkbox" name="notshow" id="notshow"><br>
+                </div>
+                <div>
+                    <label for="man">זכר</label>
+                    <input type="radio" name="min" id="man" checked>
+                    <label for="woman">נקבה</label>
+                    <input type="radio" name="min" id="woman">
+                </div>
+                <div>
+                    <label for="name">*שם משתמש</label>
+                    <input type="text" name="name" id="name" maxlength="16" minlength="2"
+                        placeholder="הכנס שם משתמש" required><br>
+                    <span class="error">שם משתמש יחודי בין 2 ל 16 תווים, משתמשים אחרים יכולים לציין את שמך באמצעות @שם
+                        המשתמש שלך.</span><br>
+                </div>
+                <div>
+                    <label for="borndate">תאריך לידה</label>
+                    <input type="date" name="bdate" id="borndate" placeholder="בחר תאריך(לא חובה)"><br>
+                </div>
+                <div>
+                    <label for="password">*סיסמא</label>
+                    <input type="password" name="password" id="password" minlength="6" placeholder="הכנס סיסמא"
+                        required><br>
+                    <span class="error">סיסמתך חייבת להיות לפחות באורך של 16 תווים.</span><br>
+                </div>
+                <div>
+                    <label for="checkpassword">*אמת סיסמא</label>
+                    <input type="password" name="password" id="checkpassword" minlength="6" placeholder="אמת סיסמא" required><br>
+                    <span class="error">הקלד שנית את הסיסמא</span><br>
+                </div>
+                <button type="submit">הרשם עכשיו</button>
+            </form>
+        </section>
+        <aside id="forum-aside">
+            <a href="www"><img src="לנושאים כלליים.jpg" height="200px" id="forum-img"></a>
+        </aside>
+
+    </section>
+
+</body>
+
+</html>

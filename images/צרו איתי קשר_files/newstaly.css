@@ -1,0 +1,604 @@
+body {
+    direction: rtl;
+    box-sizing: border-box;
+    font-family: "Segoe UI Light";
+}
+.Accessibility {
+    position: fixed;
+    top: 85vh;
+}
+.Accessibility img {
+    /* height: 4rem; */
+    position: fixed;
+    /* position: absolute; */
+    transform-origin: 50% 5em;
+    width:4.5vw;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    /* direction: rtl; */
+    
+  
+}
+.Accessibility #acces{
+    width: 4vw;
+    height: 4vw;
+}
+.Accessibility img:hover {
+    animation: wiggle 2s linear infinite;
+}
+@keyframes wiggle {
+
+    0%,
+    7% { transform: rotateZ(0); }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+/* homepage */
+#openVideo {
+    width: 100vw;
+}
+#homeabout {
+    background-image: url(images/imgabout.jpg);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* align-items: center; */
+}
+#homeabout #spanhome {
+    position: absolute;
+    text-align: center;
+    margin-top: 20vh;
+    margin-right:30vw;
+
+    align-items: center;
+}
+#spanhome {
+    font-size: 2vw;
+}
+#spanhome a {
+    border: 2px;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+#homeservices img {
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.projecthome h2 {
+    margin-top: 10vh;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.projecthome span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.projecthome img {
+    height: 35vh;
+    width: 25vw;
+}
+.projecthome p {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+/* ------- */
+/* תבנית פריסת מסך */
+.containerhome {
+    display: grid;
+    grid-template-columns: 22vh 20vh 60vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'main main'
+        'footer footer ';
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 22vh 20vh 60vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+          'nav nav'
+          'main main'
+          'footer footer '
+
+}
+.containerhome header {
+    opacity: 0.8;
+}
+header .char {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    position: fixed;
+    height: 17vh;
+    top: 0;
+    width: 100%;
+}
+header {
+    z-index: 3;
+
+}
+span #title {
+    grid-area: titel;
+}
+.char{
+    cursor: pointer;
+}
+aside {
+    grid-area: aside;
+    background-color: black;
+}
+.asidelink {
+    position: relative;
+    display: inline-block;
+}
+#uldropdwon {
+    display:none ;
+    position: absolute;
+    min-width: 15rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    background-color: grey;
+    right: 0;
+}
+.asidelink a {
+    color: white;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+
+  }
+#uldropdwon li {
+    color: white;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+}
+#uldropdwon li:hover {background-color: gray;
+}
+.asidelink:hover #uldropdwon{display: block;}
+.char {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: flex-end
+}
+
+#chars-div{
+     position: absolute;
+    margin-left: 1%;
+    margin-bottom: 0.4rem;
+    /* display: flex;
+    flex-wrap: wrap; */
+    gap :1rem;
+}
+#char1 {
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+.char #char2 {
+    background-color: black;
+    color: white;
+    height: 17vh;
+    margin: auto;
+    width: 20vw;
+}
+.char #char3 {
+    width: 2rem;
+    height: 2rem;
+}
+.char #char4 {
+    width: 2rem;
+    height: 2rem;
+}
+.char #char5 {
+    color: white;
+    /* font-size: 1.2rem; */
+}
+nav {
+    grid-area: nav;
+    margin-right: 10vw;
+         padding-top: 22vh; 
+    /* position: sticky;
+    top: 20vh; */
+
+}
+nav a {
+    font-size: 1rem;
+ 
+}
+main h2{
+    padding-top:5vh;
+text-align: center
+}
+.cardKitchen h2{
+    padding-top:5vh;
+text-align: center
+}
+main {
+    grid-area: main;
+}
+/* ......... */
+.fromfinish_home {
+    grid-area: footer;
+    background-color: black;
+
+    color: white;
+     padding: 2rem 5rem 2rem 5rem; 
+    text-align: center;
+    width: 100vw;
+}
+.fromfinish_home .footerfrom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.fromfinish_home .footercard {
+    border: black;
+    color: rgb(117, 113, 113);
+    background-color: black;
+    border-bottom: 1px solid white;
+    width: 30vw;
+    margin: 1rem;
+    font-size: 1rem;
+} 
+#submit-btn{
+    background-color: rgb(255, 255, 255);
+    padding: 0.3rem;
+    margin: 0;
+    height: 3.5vh;
+}
+.fromfinish_home .footerfrom button {
+    border: white none;
+    background-color: white;
+    color: rgb(117, 113, 113);
+    font-size: 1rem;
+    margin: auto;
+    width: 30vw;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* ...finish... */
+.finish {
+    background-color: white;
+    height: 5vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: 1rem;
+}
+/* ---------------- */
+/* דף שירותים */
+.cardservices img {
+    height: 10rem;
+    width: 15rem;
+}
+.cardservices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4.5rem;
+    align-items: center;
+    align-content: flex-start;
+    padding-bottom: 7vh;
+    text-align: center;
+    padding: 5rem;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+/* ------- */
+/* דף ממליצים עלי  */
+.cardRecommend {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 6rem;
+    font-size: 1.2rem;
+}
+.cardRecommend img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+/* ---------- */
+
+/* הטיפים שלי */
+.cardtips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    align-content: flex-start;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    padding-bottom: 10vh;
+    margin-top: 7vh;
+    font-size: 1rem;
+}
+.cardtips img {
+    height: 15rem;
+    width: 22rem;
+}
+/* ------------ */
+/* צרו איתי קשר */
+.cardContact .fromcontact {
+    background-color: #C7C7C7;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-left: 100px;
+     /* padding: 2rem 5rem;  */
+}
+.fromcontact{
+    width: 60vw;
+}
+.centercontact{
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center;
+}
+.cardContact .cradfrom {
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.7rem 
+}
+.cardContact #submit {
+    background-color: black;
+    color: white;
+}
+/* .cardContact {
+    width: 45vw;
+ 
+} */
+.cardContact2 h3{
+    margin-right: 200px;
+}
+.cardContact2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.centercontact {
+    /* display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: center;
+    flex-wrap: wrap; */
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+/* ----- */
+/* -----------prpject------------- */
+.cardproject .Project-img{
+    width: 25rem;
+    height: 15rem;
+}
+.cardproject {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+}
+#preproject {
+    font-size: 1rem;
+}
+/* ---------------------------- */
+/* ---------ProjectDisabledRoom------- */
+#imgdis {
+    height: 15rem;
+    width: 30rem;
+}
+.cardDisabledRoom {
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    padding-bottom: 25vh;
+}
+/* ----------------------------- */
+/* ------------Kitchen -------------- */
+.cardKitchen .kitchen-img {
+    height: 40rem;
+    width: 30rem;
+}
+.cardKitchen {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7rem;
+    padding-bottom: 20vh;
+}
+.cardKitchen pre {
+    font-size: 1.2rem;
+}
+/* -------------------------------------- */
+/* --------office---------- */
+#textoffice {
+    margin-top: 7vh;
+    margin-right: 15vw;
+}
+#cardoffice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 15vh;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    padding-top: 7vh;
+}
+#cardoffice img {
+    width: 22rem;
+    height: 15rem;
+}
+/* ------------------ */
+/* --------gallery---------- */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+.galleryimg {
+    width: 60%;
+    margin: 1rem auto;
+    padding-top: 5vh;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(15, 5vw);
+    grid-gap: 0.5rem;
+
+
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.img1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+
+}
+
+.img2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+
+}
+
+.img3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+
+
+}
+
+.img4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+
+}
+
+.img5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+
+}
+
+.img6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 15;
+
+}
+.img7 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+}
+.img8 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start:6;
+    grid-row-end: 9;
+
+}
+.img9 {
+    grid-column-start:3;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 12;
+
+}
+.img10{
+    grid-column-start: 5;
+    grid-column-end:9;
+    grid-row-start: 12;
+    grid-row-end: 15;
+
+}
+
+.img11{
+    grid-column-start: 3;
+    grid-column-end:5;
+    grid-row-start: 12;
+    grid-row-end: 15;
+
+}
+.gallery img:hover{
+opacity: 0.2;
+transition: opacity 2s;
+}
+/* ---------------------  */
