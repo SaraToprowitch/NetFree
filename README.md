@@ -4,7 +4,7 @@ This project is a clone of the NetFree website, which is a platform designed for
 
 ## About NetFree
 
-NetFree is an internet filtering system that filters content according to religious and social standards as per the requirements of the ultra-Orthodox community. You can find more information about NetFree on their [official website](https://netfree.link/).
+NetFree is an internet filtering system that filters content according to religious and social standards as per the requirements of the community. You can find more information about NetFree on their [official website](https://netfree.link/).
 
 ## Cloning the Repository
 
