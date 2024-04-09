@@ -9,7 +9,7 @@ NetFree is an internet filtering system that filters content according to religi
 ## Cloning the Repository
 
 To clone this repository to your local machine, use the following command:
-`git clone [https://github.com/your-username/netfree-clone.git](https://github.com/SaraToprowitch/NetFree.git)`
+`git clone [(https://github.com/SaraToprowitch/NetFree.git)](https://github.com/SaraToprowitch/NetFree.git)`
 
 ## Usage
 
