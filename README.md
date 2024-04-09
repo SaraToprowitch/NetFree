@@ -13,13 +13,13 @@ To clone this repository to your local machine, use the following command:
 
 ## Usage
 
-1. Open the `index.html` file in your web browser.
+1. Open the `main.html` file in your web browser.
 2. Explore the cloned NetFree website.
 
 ## Contributing
 
+For any inquiries or contributions, please contact me at [s0534107064@gmail.com](mailto:s0534107064@gmail.com).
+
 Contributions are not accepted for this project as it is a clone created for educational purposes only.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
